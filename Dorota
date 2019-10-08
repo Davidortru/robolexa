@@ -1,0 +1,397 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "assistant dorota",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answer"
+                        }
+                    ],
+                    "samples": [
+                        "{answer}",
+                        "I would like to make a new {answer} to eat",
+                        "I want you to show me a {answer}"
+                    ]
+                },
+                {
+                    "name": "MyNameIntent",
+                    "slots": [
+                        {
+                            "name": "names",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "It's {names}",
+                        "{names}",
+                        "I am {names}",
+                        "My name is {names}",
+                        "I'm {names}"
+                    ]
+                },
+                {
+                    "name": "MealIntent",
+                    "slots": [
+                        {
+                            "name": "meal",
+                            "type": "meal"
+                        }
+                    ],
+                    "samples": [
+                        "{meal}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ContIntent",
+                    "slots": [
+                        {
+                            "name": "cont",
+                            "type": "cont"
+                        }
+                    ],
+                    "samples": [
+                        "{cont}"
+                    ]
+                },
+                {
+                    "name": "ActionIntent",
+                    "slots": [
+                        {
+                            "name": "action",
+                            "type": "action"
+                        }
+                    ],
+                    "samples": [
+                        "{action} tell someone everything is ready",
+                        "{action}"
+                    ]
+                },
+                {
+                    "name": "HourIntent",
+                    "slots": [
+                        {
+                            "name": "hour",
+                            "type": "hour"
+                        }
+                    ],
+                    "samples": [
+                        "What {hour} is it"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "answer",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "help"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "talk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pasta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cook"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "recipe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Juan de Dios"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Carmen Mari"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nuria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jesus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Veronica"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cipriano"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Raoul"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Asun"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "David "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "meal",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "list"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lets eat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "get off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nothing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bye"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pasta"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cont",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "got it",
+                                "synonyms": [
+                                    "go on",
+                                    "continue",
+                                    "next",
+                                    "okay"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "action",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "move"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "hour",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "day"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "date",
+                                "synonyms": [
+                                    "day"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "time"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AnswerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answer",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-AnswerIntent.IntentSlot-answer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "MyNameIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "names",
+                            "type": "AMAZON.US_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Intent-MyNameIntent.IntentSlot-names"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "MealIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "meal",
+                            "type": "meal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.937825049562.894528099263"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ContIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "cont",
+                            "type": "cont",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Intent-AnswerIntent.IntentSlot-answer",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What would you like me to do?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-MyNameIntent.IntentSlot-names",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What is your name?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Intent-YesNoIntent.IntentSlot-yesno",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "would you like me to suggest one?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "would you like me to give you a pasta recipe?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "do you want to choose?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.937825049562.894528099263",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Say pasta to get one randomly"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "say pasta or say bye to end our conversation"
+                    }
+                ]
+            }
+        ]
+    }
+}
